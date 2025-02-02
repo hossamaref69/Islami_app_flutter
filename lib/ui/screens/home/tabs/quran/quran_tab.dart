@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:islami/core/constants/app_assets.dart';
 import 'package:islami/core/constants/local_storage_keys.dart';
 import 'package:islami/core/constants/surahes.dart';
@@ -9,7 +8,6 @@ import 'package:islami/core/theme/app_colors.dart';
 import 'package:islami/model/quran_data.dart';
 import 'package:islami/ui/screens/home/tabs/quran/widgets/recent_card.dart';
 import 'package:islami/ui/screens/home/tabs/quran/widgets/sura_card.dart';
-import 'package:islami/ui/screens/home/tabs/quran/widgets/sura_search_field.dart';
 
 import '../../../soura_details/sura_details.dart';
 
@@ -29,8 +27,6 @@ class _QuranTabState extends State<QuranTab> {
     });
   }
 
-
-
   String searchQuery = "";
   List<QuranData> recentSurahModels = [];
   List<QuranData> searchSurahModels = [];
@@ -38,9 +34,7 @@ class _QuranTabState extends State<QuranTab> {
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery
-        .of(context)
-        .size;
+    var size = MediaQuery.of(context).size;
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
@@ -260,4 +254,5 @@ class _QuranTabState extends State<QuranTab> {
       }
     }
   }
+
 }
