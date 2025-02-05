@@ -13,12 +13,12 @@ class _TimesTabState extends State<TimesTab> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         image: DecorationImage(
           image: AssetImage(
-            AppAssets.timesBg,
+            "assets/images/time_screen.png",
           ),
-        fit: BoxFit.fill
+        fit: BoxFit.fitWidth
         ),
       ),
     );
